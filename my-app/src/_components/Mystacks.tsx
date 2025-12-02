@@ -16,7 +16,7 @@ const Mystacks = () => {
           <div className="bg-white w-60 h-auto rounded-2xl p-2.5 md:w-80 lg:w-100 ">
             <div className="flex flex-col gap-3 p-2.5">
               <h3 className="text-sm font-extrabold">Front-end</h3>
-              <div className="flex flex-wrap w-full gap-5 ">
+              <div className="flex flex-wrap w-full gap-5 justify-center">
                 <Image
                   src="/JS.png"
                   alt="Logo javasccript"
@@ -65,38 +65,38 @@ const Mystacks = () => {
           <div className="bg-white w-60 h-auto rounded-2xl p-2.5  md:w-80 lg:w-100 ">
             <div className="flex flex-col gap-3 p-2.5">
               <h3 className="text-sm font-extrabold">Backend</h3>
-              <div className="flex flex-wrap w-full gap-5 p-2.5 ">
+              <div className="flex flex-wrap w-full gap-5 p-2.5 justify-center">
                 <Image
                   src="/Node.png"
-                  alt="Logo javasccript"
+                  alt="Logo node.js"
                   width={35}
                   height={35}
                   className=" lg:w-12 lg:h-12"
                 />
                 <Image
                   src="/typeScript.png"
-                  alt="Logo tailwindCSS"
+                  alt="Logo typescript"
                   width={35}
                   height={35}
                   className=" lg:w-12 lg:h-12"
                 />
                 <Image
-                  src="/java.png"
-                  alt="Logo React.js"
+                  src="/Java.png"
+                  alt="Logo java"
                   width={35}
                   height={35}
                   className=" lg:w-12 lg:h-12"
                 />
                 <Image
                   src="/PostgreSql.png"
-                  alt="Logo CSS"
+                  alt="Logo PostgreSql"
                   width={35}
                   height={35}
                   className=" lg:w-12 lg:h-12"
                 />
                 <Image
                   src="/Prisma.png"
-                  alt="Logo Html"
+                  alt="Logo prisma orm"
                   width={35}
                   height={35}
                   className=" lg:w-12 lg:h-12"

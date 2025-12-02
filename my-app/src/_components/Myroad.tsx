@@ -2,8 +2,8 @@ const Myroad = () => {
   return (
     <section className="flex justify-center w-full p-4">
       <div className="container mx-auto p-4 flex flex-col items-center gap-8 bg-[#DBDBDB] rounded-2xl">
-        <div className="text-center">
-          <h1 className="text-[#FF751F] text-xl font-semibold md:text-3xl">
+        <div className="text-center mb-3 py-4">
+          <h1 className="text-[#FF751F] text-xl mb-3 font-semibold md:text-3xl">
             Minha Trajetória
           </h1>
           <p className="text-xs font-extralight md:text-sm">
