@@ -63,7 +63,7 @@ const Mystacks = () => {
             </div>
           </div>
           <div className="bg-white w-60 h-auto rounded-2xl p-2.5  md:w-80 lg:w-100 ">
-            <div className="flex flex-col  justify-center gap-3 p-2.5">
+            <div className="flex flex-col gap-3 p-2.5">
               <h3 className="text-sm font-extrabold">Backend</h3>
               <div className="flex flex-wrap w-full gap-5 p-2.5 ">
                 <Image
