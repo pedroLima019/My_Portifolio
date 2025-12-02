@@ -5,7 +5,7 @@ const About = () => {
     <main className=" flex justify-center w-full p-4">
       <div className=" bg-[#DBDBDB]  container mx-auto p-2 flex flex-col items-center justify-center rounded-2xl  shadow-xl  lg:flex-row">
         <div className="text-center p-4 lg:w-[50%] lg:p-7 ">
-          <h1 className="text-xl mb-5 font-semibold text-[#FF751F] md:text-3xl ">
+          <h1 className="text-xl mb-2 font-semibold text-[#FF751F] md:text-3xl ">
             Um pouco sobre mim
           </h1>
           <p className="text-xs leading-6 text-left md:leading-7 md:text-sm lg:text-xs lg:leading-5.5 lg:text-justify xl:text-sm xl:leading-7">
