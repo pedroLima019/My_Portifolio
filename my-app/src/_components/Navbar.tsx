@@ -19,7 +19,7 @@ const Navbar = () => {
         rounded-lg 
         p-3 
         flex justify-between items-center
-        shadow-[0_4px_12px_rgba(0,0,0,0.1)]"
+        shadow-xl"
       >
         <div>
           <Image

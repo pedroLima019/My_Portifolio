@@ -29,7 +29,7 @@ const About = () => {
         </div>
         <div className="rounded-full  flex justify-center p-4 lg:w-[50%]">
           <Image
-            className="rounded-full "
+            className="rounded-full  shadow-2xl"
             src="/mySelf.jpg"
             alt="Foto Pedro Lima"
             width={500}

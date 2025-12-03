@@ -1,4 +1,5 @@
 import About from "@/_components/About";
+import Footer from "@/_components/Footer";
 import Header from "@/_components/Header";
 import Myroad from "@/_components/Myroad";
 import Mystacks from "@/_components/Mystacks";
@@ -14,6 +15,7 @@ const Home = () => {
       <Mystacks />
       <Myroad />
       <Project />
+      <Footer />
     </>
   );
 };
