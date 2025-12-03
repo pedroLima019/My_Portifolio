@@ -7,7 +7,7 @@ const Footer = () => {
   const mensagem = "Olá, Pedro ! Vim pelo seu portifólio";
   return (
     <footer className="flex justify-center w-full p-4">
-      <div className="container mx-auto p-4 flex flex-col items-center gap-4 bg-[#181818] rounded-2xl shadow-xl ">
+      <div className="container mx-auto p-4 flex flex-col items-center gap-4 bg-[#1E1E1E] rounded-2xl shadow-xl ">
         <h3 className="text-center text-white text-xl">Minhas redes sociais</h3>
 
         <div className="flex w-full  justify-center space-x-6 p-4">
