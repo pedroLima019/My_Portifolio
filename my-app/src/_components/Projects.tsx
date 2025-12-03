@@ -10,49 +10,49 @@ import Link from "next/link";
 
 const items = [
   {
-    img: "/typescript.png",
+    img: "/",
     title: "Projeto 01",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
   },
   {
-    img: "/typescript.png",
+    img: "/",
     title: "Projeto 02",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
   },
   {
-    img: "/typescript.png",
+    img: "/",
     title: "Projeto 03",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
   },
   {
-    img: "/typescript.png",
+    img: "/",
     title: "Projeto 03",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
   },
   {
-    img: "/typescript.png",
+    img: "/",
     title: "Projeto 03",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
   },
   {
-    img: "/typescript.png",
+    img: "/",
     title: "Projeto 03",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
   },
   {
-    img: "/typescript.png",
+    img: "/",
     title: "Projeto 03",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
   },
   {
-    img: "/typescript.png",
+    img: "/",
     title: "Projeto 03",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
