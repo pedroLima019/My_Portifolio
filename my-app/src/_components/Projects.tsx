@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Carousel,
   CarouselContent,
@@ -7,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const items = [
   {
@@ -59,18 +62,30 @@ const items = [
   },
 ];
 
-export default function Project() {
+const Projects = () => {
   return (
-    <section className="flex justify-center p-4 w-full">
-      <div className="container mx-auto flex justify-center bg-[#FF751F] p-4 flex-col items-center gap-6 rounded-2xl shadow-xl">
-        <div className="text-center ">
+    <section id="Projetos" className="flex justify-center p-4 w-full">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="container mx-auto flex justify-center bg-[#FF751F] p-4 flex-col items-center gap-6 rounded-2xl shadow-xl"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
           <h1 className="text-white text-xl mb-2 font-semibold md:text-3xl">
-            Minha Trajetória
+            Meus projetos
           </h1>
           <p className="text-xs font-extralight md:text-sm text-white">
-            Um pouco da minha trajetória até o momento
+            alguns projetos que estou trabalhando e trabalhei
           </p>
-        </div>
+        </motion.div>
 
         <Carousel
           opts={{
@@ -79,16 +94,21 @@ export default function Project() {
           className="w-full max-w-xl md:max-w-3xl xl:max-w-6xl"
         >
           <CarouselContent className="p-3">
-            {items.map((item, img) => (
+            {items.map((item, index) => (
               <CarouselItem
-                key={img}
-                className="
-                  basis-full 
-                  sm:basis-1/2 
-                  lg:basis-1/3
-                "
+                key={index}
+                className="basis-full sm:basis-1/2 lg:basis-1/3"
               >
-                <div className="bg-zinc-800 rounded-3xl p-4 text-white flex flex-col items-center gap-2 shadow-lg">
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeOut",
+                  }}
+                  viewport={{ once: true }}
+                  className="bg-zinc-800 rounded-3xl p-4 text-white flex flex-col items-center gap-2 shadow-lg"
+                >
                   <Image
                     src={item.img}
                     width={100}
@@ -97,21 +117,23 @@ export default function Project() {
                   />
                   <h3 className="font-semibold text-lg">{item.title}</h3>
                   <p className="text-sm text-center opacity-80">{item.desc}</p>
+
                   <Link
                     href={item.link}
-                    className=" text-[#FF751F] bg-white w-[150px] text-sm mt-2.5 rounded-lg p-1 flex justify-center hover:bg-black hover:text-[#FF751F] duration-300 transition-all"
+                    className="text-[#FF751F] bg-white w-[150px] text-sm mt-2.5 rounded-lg p-1 flex justify-center hover:bg-black hover:text-[#FF751F] duration-300 transition-all"
                   >
                     Ver mais
                   </Link>
-                </div>
+                </motion.div>
               </CarouselItem>
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="hidden lg:flex bg-white border-0 " />
+          <CarouselPrevious className="hidden lg:flex bg-white border-0" />
           <CarouselNext className="hidden lg:flex bg-white border-0" />
         </Carousel>
-      </div>
+      </motion.div>
     </section>
   );
-}
+};
+export default Projects;

@@ -1,23 +1,56 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const Myroad = () => {
   return (
-    <section className="flex justify-center w-full p-4">
-      <div className="container mx-auto p-4 flex flex-col items-center gap-4 bg-[#DBDBDB] rounded-2xl shadow-xl">
-        <div className="text-center  py-4">
+    <section id="Trajetoria" className="flex justify-center w-full p-4">
+      <motion.div
+        className="container mx-auto p-4 flex flex-col items-center gap-4 bg-[#DBDBDB] rounded-2xl shadow-xl"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        {/* TÍTULO */}
+        <motion.div
+          className="text-center py-4"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <h1 className="text-[#FF751F] text-xl mb-2 font-semibold md:text-3xl">
             Minha Trajetória
           </h1>
           <p className="text-xs font-extralight md:text-sm">
             Um pouco da minha trajetória até o momento
           </p>
-        </div>
+        </motion.div>
 
+        {/* TIMELINE */}
         <div className="relative w-full max-w-4xl">
+          {/* Linha central desktop */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[3px] bg-zinc-400 -translate-x-1/2"></div>
+
+          {/* Linha lateral mobile */}
           <div className="md:hidden absolute left-4 top-0 bottom-0 w-0.5 bg-zinc-400"></div>
 
           <div className="flex flex-col gap-10">
-            <div className="md:flex md:justify-start w-full relative">
-              <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-[#FF751F] rounded-full"></div>
+            {/* ITEM 1 */}
+            <motion.div
+              className="md:flex md:justify-start w-full relative"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <motion.div
+                className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-[#FF751F] rounded-full"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ delay: 0.2, type: "spring" }}
+              />
 
               <div className="md:w-1/2 md:pr-10">
                 <div className="border-l md:border-none p-4 bg-zinc-800 text-white rounded-xl">
@@ -36,10 +69,22 @@ const Myroad = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="md:flex md:justify-end w-full relative">
-              <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-[#FF751F] rounded-full"></div>
+            {/* ITEM 2 */}
+            <motion.div
+              className="md:flex md:justify-end w-full relative"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <motion.div
+                className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-[#FF751F] rounded-full"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ delay: 0.3, type: "spring" }}
+              />
 
               <div className="md:w-1/2 md:pl-10">
                 <div className="border-l md:border-none p-4 bg-zinc-800 text-white rounded-xl">
@@ -61,10 +106,22 @@ const Myroad = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="md:flex md:justify-start w-full relative">
-              <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-[#FF751F] rounded-full"></div>
+            {/* ITEM 3 */}
+            <motion.div
+              className="md:flex md:justify-start w-full relative"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <motion.div
+                className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-[#FF751F] rounded-full"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ delay: 0.4, type: "spring" }}
+              />
 
               <div className="md:w-1/2 md:pr-10">
                 <div className="border-l md:border-none p-4 bg-zinc-800 text-white rounded-xl">
@@ -81,10 +138,22 @@ const Myroad = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="md:flex md:justify-end w-full relative">
-              <div className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-[#FF751F] rounded-full"></div>
+            {/* ITEM 4 */}
+            <motion.div
+              className="md:flex md:justify-end w-full relative"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <motion.div
+                className="hidden md:block absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-[#FF751F] rounded-full"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ delay: 0.5, type: "spring" }}
+              />
 
               <div className="md:w-1/2 md:pl-10">
                 <div className="border-l md:border-none p-4 bg-zinc-800 text-white rounded-xl">
@@ -111,10 +180,10 @@ const Myroad = () => {
                   </ul>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
