@@ -12,15 +12,16 @@ const Header = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="flex justify-center w-full p-4"
+      className="flex  justify-center w-full p-4 "
     >
-      <div className="bg-[#FF751F] shadow-xl container mx-auto p-5 flex flex-col items-center justify-center rounded-2xl gap-1 md:flex-row">
-        <div className="flex w-50 h-50 relative justify-center shadow-xl rounded-full items-center p-2 md:w-60 md:h-60 md:mr-3 lg:mr-6 lg:w-70 lg:h-70 xl:mr-10">
+      <div className="bg-[#FF751F] shadow-xl container mx-auto p-4 flex flex-col items-center justify-center rounded-2xl gap-1 md:flex-row">
+        <div className="flex   relative justify-center  rounded-full items-center p-2 md:w-60 md:h-60 md:mr-3 lg:mr-6 lg:w-70 lg:h-70 xl:mr-10">
           <Image
             src="/mySelf.jpg"
-            fill
+            width={300}
+            height={300}
             alt="Foto Pedro Lima"
-            className="rounded-full"
+            className="rounded-full shadow-2xl"
           />
         </div>
 
