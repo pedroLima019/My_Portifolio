@@ -32,31 +32,7 @@ const items = [
   },
   {
     img: "/",
-    title: "Projeto 03",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    link: "/",
-  },
-  {
-    img: "/",
-    title: "Projeto 03",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    link: "/",
-  },
-  {
-    img: "/",
-    title: "Projeto 03",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    link: "/",
-  },
-  {
-    img: "/",
-    title: "Projeto 03",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    link: "/",
-  },
-  {
-    img: "/",
-    title: "Projeto 03",
+    title: "Projeto 04",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     link: "/",
   },
@@ -103,7 +79,7 @@ const Projects = () => {
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{
-                    duration: 0.5,
+                    duration: 0.8,
                     ease: "easeOut",
                   }}
                   viewport={{ once: true }}

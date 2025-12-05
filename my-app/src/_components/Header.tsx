@@ -44,8 +44,8 @@ const Header = () => {
             viewport={{ once: true }}
           >
             <Link
-              href="/"
-              className="bg-white p-1.5 text-xs rounded-lg font-semibold w-[200px] lg:text-sm hover:bg-black hover:text-[#FF751F] transition-all duration-300"
+              href="#Sobre"
+              className="bg-white p-1.5 text-xs rounded-lg font-semibold w-[250px] lg:text-sm hover:bg-zinc-800 hover:text-white transition-all duration-300"
             >
               Venha me conhecer
             </Link>
