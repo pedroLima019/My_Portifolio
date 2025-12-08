@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Footer = () => {
-  const telefone = "+5511999999999";
+  const telefone = "+5519989026581";
   const mensagem = "Olá, Pedro ! Vim pelo seu portifólio";
 
   return (

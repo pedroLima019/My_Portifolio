@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full px-4  z-50 left-0 right-0 ">
+      <div className="w-full px-4   z-50 left-0 right-0 ">
         <nav className="container  mx-auto bg-[#D7D7D7] rounded-lg p-3 mt-3 flex justify-between items-center shadow-xl relative">
           <div className="flex items-center gap-3">
             <Image
